@@ -1,6 +1,12 @@
 { lib, config, pkgs, host, ... }:
 {
   boot.kernelParams = ["ipv6.disable=1"];
+  services = {
+    resolved = {
+      enable = true;
+      dnssec = "false";
+    };
+  };
   networking = {
     enableIPv6 = false;
     firewall = {
@@ -10,7 +16,7 @@
     networkmanager = {
       enable = true;
       wifi.backend = "iwd";
-      dns = "default";
+      dns = "systemd-resolved";
     };
   };
 
