@@ -2,8 +2,8 @@
 {
   programs.git = {
     settings = {
-      user.name = "1m4dam88";
-      user.email = "171095855+1m4dam88@users.noreply.github.com";
+      user.name = "pepsimax271000";
+      user.email = "248238336+pepsimax271000@users.noreply.github.com";
       init.defaultBranch = "master";
     };
     enable = true;
