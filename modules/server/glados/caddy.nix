@@ -66,6 +66,12 @@ in
             reverse_proxy localhost:8112
           '';
         };
+        "qbittorrent.tjd.lol" = {
+          useACMEHost = "tjd.lol";
+          extraConfig = ''
+            reverse_proxy localhost:8080
+          '';
+        };
         "immich.tjd.lol" = {
           useACMEHost = "tjd.lol";
           extraConfig = ''
@@ -82,12 +88,6 @@ in
           useACMEHost = "tjd.lol";
           extraConfig = ''
             reverse_proxy localhost:8000
-          '';
-        };
-        "searx.tjd.lol" = {
-          useACMEHost = "tjd.lol";
-          extraConfig = ''
-            reverse_proxy localhost:8080
           '';
         };
         "slskd.tjd.lol" = {
@@ -150,4 +150,3 @@ in
     };
   };
 }
-

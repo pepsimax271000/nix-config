@@ -112,6 +112,19 @@
                 };
               };
             }
+            {
+              "qBittorrent" = {
+                description = "Torrent Client";
+                href = "https://qbittorrent.${config.homelab.domain}";
+                icon = "sh-deluge.svg";
+                widget = {
+                  type = "qbittorrent";
+                  url = "https://qbittorrent.${config.homelab.domain}";
+                  username = "admin";
+                  password = "dvUcm5xah";   
+                };
+              };
+            }
           ];
         }
         {

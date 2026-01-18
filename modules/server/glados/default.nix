@@ -11,6 +11,7 @@
     ./jellyseerr.nix
     ./mergerfs.nix
     ./paperless.nix
+    ./qbittorrent.nix
     ./share.nix
     ./slskd.nix
     ./users.nix

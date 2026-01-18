@@ -35,12 +35,26 @@ let
 
   # Homelab-specific secrets (conditionally included)
   homelabSecrets = mkIf isHomelabHost {
+    deluge = {
+      format = "yaml";
+      sopsFile = ./../../secrets/homelab.yaml;
+      mode = "0775";
+      owner = config.users.users.share.name;
+      group = config.users.users.share.group;
+    };
+
+    qbittorrent_password = {
+      format = "yaml";
+      sopsFile = ./../../secrets/homelab.yaml;
+      mode = "0775";
+      owner = config.users.users.share.name;
+      group = config.users.users.share.group;
+    };
     # Database and service passwords
     db_password = yamlSecret secretPaths.homelab;
     paperless_password = yamlSecret secretPaths.homelab;
     
     # Service-specific secrets
-    deluge = yamlSecret secretPaths.homelab;
     searx-secret = yamlSecret secretPaths.homelab;
     imadam-email = yamlSecret secretPaths.homelab;
     slskd = yamlSecret secretPaths.homelab;
