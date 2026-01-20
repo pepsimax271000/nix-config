@@ -33,6 +33,11 @@
       inputs.hyprland.follows = "hyprland";
     };
 
+    noctalia = {
+      url = "github:noctalia-dev/noctalia-shell";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     # Applications / packages
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
     nixcord.url = "github:kaylorben/nixcord";

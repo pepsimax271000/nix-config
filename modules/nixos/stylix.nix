@@ -2,7 +2,7 @@
 {
   stylix = {
     enable = true;
-    image = ./../../assets/wallpapers/dark-waves.jpg;
+    image = ./../../assets/wallpapers/switch.png;
     base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
     polarity = "dark";
     opacity.terminal = 0.9;

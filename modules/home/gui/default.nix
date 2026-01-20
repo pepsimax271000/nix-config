@@ -14,6 +14,7 @@
     ./krita.nix
     ./mako.nix
     ./mpv.nix
+    ./noctalia.nix
     ./obs.nix
     ./prism.nix
     ./qbittorrent.nix
@@ -21,7 +22,7 @@
     ./tauon.nix
     ./vial.nix
     ./walker.nix
-    ./waybar.nix
+    #./waybar.nix
     ./zathura.nix
   ];
 }
