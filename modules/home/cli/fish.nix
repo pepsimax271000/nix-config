@@ -32,12 +32,12 @@
       "neovim" = "nvim";
       "n" = "nvim";
       "vfzf" = "nvim $(fzf)";
-      "rn" = "nh os switch ~/nix-config";
       "cp" = "cp -iv";
       "mv" = "mv -iv";
       "rm" = "rm -vI";
       "rsync" = "rsync -vrPlu";
       "md" = "mkdir -pv";
+      "fa" = "fastfetch --config examples/13.jsonc";
       
       "g" = "git";
       "gc" = "git clone";
@@ -58,7 +58,6 @@
       "cd" = "z";
       "cc" = "clear; z";
       "ka" = "killall";
-      "fastfetch" = "fastfetch --config examples/13.jsonc";
       
       ".." = "z ..";
       "..." = "z ../..";
@@ -75,6 +74,7 @@
       "scg" = "doas nix-collect-garbage -d";
       "ucg" = "nix-collect-garbage -d";
       "cfg" = "z /home/ye/nix-config/";
+      "rn" = "nh os switch ~/nix-config";
 
       # SSH related
       "glados" = "ssh glados";
