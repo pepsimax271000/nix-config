@@ -4,6 +4,7 @@
     enable = true;
     settings = {
       # configure noctalia here
+      settingsVersion = "41";
       bar = {
         density = "default";
         position = "right";
@@ -36,9 +37,12 @@
           right = [
             {
               id = "Tray";
+              drawerEnabled = false;
+              colorizeIcons = true;
             }
             {
               id = "Volume";
+              displayMode = "alwaysShow";
             }
             {
               id = "Brightness";
@@ -50,7 +54,7 @@
             }
             {
               formatHorizontal = "HH:mm";
-              formatVertical = "HH mm";
+              formatVertical = "MMM dd - HH mm";
               id = "Clock";
               useMonospacedFont = true;
               usePrimaryColor = true;
