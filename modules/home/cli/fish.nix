@@ -58,6 +58,7 @@
       "cd" = "z";
       "cc" = "clear; z";
       "ka" = "killall";
+      "fastfetch" = "fastfetch --config examples/13.jsonc";
       
       ".." = "z ..";
       "..." = "z ../..";
