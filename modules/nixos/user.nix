@@ -29,7 +29,10 @@ in {
 
     # Share sops-nix with Home Manager
     {
-      home-manager.sharedModules = [ inputs.sops-nix.homeManagerModules.sops ];
+      home-manager.sharedModules = 
+      [ inputs.sops-nix.homeManagerModules.sops 
+        inputs.noctalia.homeModules.default
+      ];
     }
   ];
 
