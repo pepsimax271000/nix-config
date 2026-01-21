@@ -5,7 +5,7 @@
     image = ./../../assets/wallpapers/switch.png;
     base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
     polarity = "dark";
-    opacity.terminal = 0.9;
+    opacity.terminal = 1.0;
     cursor.package = pkgs.catppuccin-cursors.mochaBlue;
     cursor.name = "catppuccin-mocha-blue-cursors";
     cursor.size = 24;

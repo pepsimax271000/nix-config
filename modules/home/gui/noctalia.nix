@@ -98,6 +98,23 @@
         terminalCommand = "foot -e";
         enableClipboardHistory = true;
       };
+      nightLight = {
+        enabled = true;
+        autoSchedule = false;
+        nightTemp = "3500";
+        manualSunset = "22:00";
+        manualSunrise = "06:30";
+      };
+      brightness = {
+        enableDdcSupport = true;
+      };
+      colorSchemes = {
+        predefinedScheme = "Catppuccin";
+      };
+      audio = {
+        cavaFrameRate = "165";
+        visualizerType = "mirrored";
+      };
     };
   };
   programs.noctalia-shell.systemd.enable = true;
