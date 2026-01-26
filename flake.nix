@@ -39,11 +39,18 @@
     };
 
     # Applications / packages
-    zen-browser.url = "github:0xc000022070/zen-browser-flake";
-    nixcord.url = "github:kaylorben/nixcord";
+    zen-browser = {
+      inputs.nixpkgs.follows = "nixpkgs";
+      url = "github:0xc000022070/zen-browser-flake";
+    };
+
+    firefox-addons = {
+      url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     nix-gaming.url = "github:fufexan/nix-gaming";
     stylix.url = "github:danth/stylix";
-    walker.url = "github:abenz1267/walker";
 
     # Extra integrations
     yazi-plugins = {
