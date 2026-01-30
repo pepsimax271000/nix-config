@@ -6,6 +6,7 @@
           "udiskie"
           "swww-daemon &"
           "walker --gapplication-service"
+          "openrgb -p asdf"
 
           "wl-paste --type text --watch cliphist store"
           "wl-paste --type image--watch cliphist store"
