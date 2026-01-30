@@ -9,6 +9,7 @@
         density = "mini";
         position = "right";
         exclusive = true;
+        outerCorners = false;
         monitors = [
           "DP-2"
           "DP-1"
@@ -114,6 +115,9 @@
       audio = {
         cavaFrameRate = "165";
         visualizerType = "mirrored";
+      };
+      osd = {
+        location = "top";
       };
     };
   };
