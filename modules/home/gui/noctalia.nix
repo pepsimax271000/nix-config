@@ -6,7 +6,7 @@
       # configure noctalia here
       settingsVersion = "41";
       bar = {
-        density = "default";
+        density = "mini";
         position = "right";
         exclusive = true;
         monitors = [
