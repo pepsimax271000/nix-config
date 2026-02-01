@@ -13,6 +13,7 @@
         monitors = [
           "DP-2"
           "DP-1"
+          "LVDS-1"
         ];
         showCapsule = false;
         widgets = {
