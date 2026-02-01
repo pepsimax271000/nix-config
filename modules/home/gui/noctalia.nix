@@ -6,12 +6,14 @@
       # configure noctalia here
       settingsVersion = "41";
       bar = {
-        density = "default";
+        density = "mini";
         position = "right";
         exclusive = true;
+        outerCorners = false;
         monitors = [
           "DP-2"
           "DP-1"
+          "LVDS-1"
         ];
         showCapsule = false;
         widgets = {
@@ -114,6 +116,9 @@
       audio = {
         cavaFrameRate = "165";
         visualizerType = "mirrored";
+      };
+      osd = {
+        location = "top";
       };
     };
   };

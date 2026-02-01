@@ -3,12 +3,9 @@
   wayland.windowManager.hyprland = {
      settings = {
        exec-once = [
-          "waybar &"
           "udiskie"
           "swww-daemon &"
           "walker --gapplication-service"
-          "mako &"
-          "avizo-service"
 
           "wl-paste --type text --watch cliphist store"
           "wl-paste --type image--watch cliphist store"
