@@ -8,7 +8,7 @@
     ./hyprland
     ./imv.nix
     ./kdeconnect.nix
-    ./kicad.nix
+    #./kicad.nix
     ./krita.nix
     ./mpv.nix
     ./noctalia.nix

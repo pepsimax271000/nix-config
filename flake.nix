@@ -77,7 +77,10 @@
         # --- Common hardware module definitions ---
         hardwareProfiles = {
           thinkpad = {
-            w520 = [ inputs.nixos-hardware.nixosModules.lenovo-thinkpad-w520 ];
+            w520 = [ 
+              inputs.nixos-hardware.nixosModules.lenovo-thinkpad-w520
+              inputs.nixos-hardware.nixosModules.common-gpu-nvidia-disable
+            ];
             t480 = [ inputs.nixos-hardware.nixosModules.lenovo-thinkpad-t480 ];
             x230 = [ inputs.nixos-hardware.nixosModules.lenovo-thinkpad-x230 ];
             x61  = [ ];
