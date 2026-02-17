@@ -5,7 +5,6 @@
     enable = true;
     settings.Resolve = {
       DNSSEC = true;
-      DNSOverTLS = true;
     };
   };
   networking = {
