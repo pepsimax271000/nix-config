@@ -1,15 +1,11 @@
 { lib, config, pkgs, host, ... }:
 {
   boot.kernelParams = ["ipv6.disable=1"];
-  services = {
-    resolved = {
-      settings = {
-        Resolve = {
-          DNSSEC = {
-            enable = false;
-          };
-        };
-      };
+  services.resolved = {
+    enable = true;
+    settings.Resolve = {
+      DNSSEC = true;
+      DNSOverTLS = true;
     };
   };
   networking = {
