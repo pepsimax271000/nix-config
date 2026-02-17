@@ -3,7 +3,7 @@
   environment.systemPackages = with pkgs; [
     steamtinkerlaunch
     winetricks
-    wineWowPackages.staging
+    wineWow64Packages.staging
     nur.repos.iuricarras.truckersmp-cli
     gamemode
   ];

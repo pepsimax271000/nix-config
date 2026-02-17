@@ -3,8 +3,13 @@
   boot.kernelParams = ["ipv6.disable=1"];
   services = {
     resolved = {
-      enable = true;
-      dnssec = "false";
+      settings = {
+        Resolve = {
+          DNSSEC = {
+            enable = false;
+          };
+        };
+      };
     };
   };
   networking = {
@@ -19,6 +24,4 @@
       dns = "systemd-resolved";
     };
   };
-
-
 }
