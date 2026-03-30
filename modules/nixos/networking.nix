@@ -4,7 +4,7 @@
   services.resolved = {
     enable = true;
     settings.Resolve = {
-      DNSSEC = true;
+      DNSSEC = false;
     };
   };
   networking = {
