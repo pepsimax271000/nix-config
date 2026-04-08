@@ -4,7 +4,6 @@
      settings = {
        exec-once = [
           "udiskie"
-          "swww-daemon &"
           "walker --gapplication-service"
           "openrgb -p asdf"
 
