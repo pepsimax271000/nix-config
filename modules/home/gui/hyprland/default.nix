@@ -23,7 +23,6 @@
     matugen
     playerctl
     swappy
-    swww
     wayland
     wf-recorder
     wl-clipboard
