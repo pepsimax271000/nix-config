@@ -33,7 +33,6 @@
                 "SUPER shift, l, movewindow, r"
                 "SUPER ctrl, j, movefocus, d"
                 "SUPER ctrl, k, movefocus, u"
-                "SUPER, Space, swapsplit"
                 "SUPER, s, pin"
                 "SUPER, a, exec, noctalia-shell ipc call bar toggle"
                 
