@@ -1,4 +1,4 @@
-n config, pkgs, lib, ... }:
+{ config, pkgs, lib, ... }:
 let
   email = "${config.sops.secrets.imadam-email.path}";
   api = "${config.sops.secrets.cloudflare_api_token.path}";
